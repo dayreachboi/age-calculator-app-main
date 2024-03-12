@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main {
+  width: 500px;
+  height: 350px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px 15px 100px 15px;
+}
+.input-wrapper {
+  padding-top: 20px;
+  display: flex;
+  margin-bottom: 35px;
+}
+input {
+  width: 70px;
+  height: 10px;
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid lightgray;
+  font-weight: 900;
+  font-size: 17px;
+  font-family: Arial, sans-serif;
+}
+input:active {
+  border-bottom: darkgrey;
+}
+.Day {
+  margin-left: 5px;
+}
+.Month {
+  margin-left: 20px;
+  margin-top: 0;
+}
+.Year {
+  margin-left: 23px;
+  margin-top: 0;
+}
+label {
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+hr {
+  border: 1px solid rgb(243, 242, 242);
+}
+.result {
+  margin-top: 20px;
+  line-height: 1.2;
+  font-size: 55px;
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+.placeholder {
+  color: blue;
+}
+.error-label {
+  color: red;
+}
+#errorDay {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 3px;
+}
+#errorMonth {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 3px;
+}
+#errorYear {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 3px;
+}
+
+
+@media only screen and (max-width: 480px) {
+  body {
+    align-items: start;
+  }
+  .main {
+      width: 100vw;
+      margin-top: 80px;
+      padding: 0 20px;
+      margin: 50px 15px;
+  }
+  .Day, .Month, .Year {
+    margin-left: 0;
+    width: 33.33%
+  }
+
+  
+  input {
+    border-radius: 5px;
+    padding: 0px 10px;
+    border: 1px solid lightgray;
+    font-weight: 900;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    height:40px;
+    align-items: center;
+  }
+
+  div.input-wrapper{
+    display: flex;
+    gap: 10px;
+    padding-top: 30px;
+  }
+
+    .result {
+      margin-top: 40px;
+      line-height: 1em;
+      font-size: 40px;
+      font-family: Arial, sans-serif;
+      font-weight: 900;
+      font-style: italic;
+  }
+}

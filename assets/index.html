@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/text.js"></script>
+    <title>Age Calculator</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="input-wrapper">
+            <div class="Day">
+                <label for="day" id="dayLabel">DAY</label><br>
+                <input type="number" id="day" min="1" max="31" onchange="calculateAge()"><br>
+                <p id="errorDay" style="color: red; display: none;">must be a valid day</p>
+            </div>
+            <div class="Month">
+                <label for="Month" id="monthLabel">MONTH</label><br>
+                <input type="number" id="month" min="1" max="12" onchange="calculateAge()"><br>
+                <p id="errorMonth" style="color: red; display: none;">must be a valid month</p>
+
+            </div>
+            <div class="Year">
+                <label for="Year" id="yearLabel">YEAR</label><br>
+                <input type="number" id="year" min="1900" max="2024" onchange="calculateAge()"><br>
+                <p id="errorYear" style="color: red; display: none;">must be in the past</p>
+
+                <p id="error" style="color: red; display: none;"></p>
+
+            </div>
+        </div>
+        <hr>
+        <div class="result">
+            <p id="result"></p>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
